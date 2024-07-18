@@ -10,8 +10,8 @@ class AssignmentSchema(SQLAlchemyAutoSchema):
         model = Assignment
         unknown = EXCLUDE
 
-    id = auto_field(required=False, allow_none=True)
-    content = auto_field()
+    id = auto_field(required=True)
+    content = auto_field(dump_only=True)
     created_at = auto_field(dump_only=True)
     updated_at = auto_field(dump_only=True)
     teacher_id = auto_field(dump_only=True)
@@ -31,6 +31,7 @@ class AssignmentSubmitSchema(Schema):
 
     id = fields.Integer(required=True, allow_none=False)
     teacher_id = fields.Integer(required=True, allow_none=False)
+
 
     @post_load
     def initiate_class(self, data_dict, many, partial):

@@ -13,7 +13,7 @@ There are 5 resources:
 - A principal can view all the assignments submitted and/or graded by teachers.
 - A principal can re-grade the assignments already graded by the teacher.
 - A student can create and edit a draft assignment
-- A student can list all his created assignments
+- A student can list all his/her/they created assignments
 - A student can submit a draft assignment to a teacher
 - A teacher can list all assignments submitted to him
 - A teacher can grade an assignment submitted to him
